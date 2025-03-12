@@ -1,4 +1,14 @@
 .trusted-brand-container {
+	width: 100%;
+	background-color: var(--white-background);
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 0 1.25rem !important;
+}
+
+.trusted-brand {
+	max-width: 1440px;
 	padding: 3.13rem 0;
 	display: inline-flex;
 	flex-direction: row;
@@ -24,7 +34,7 @@
 
 /* Responsive styles */
 @media only screen and (max-width: 425px) {
-	.trusted-brand-container {
+	.trusted-brand {
 		gap: 1.25rem;
 	}
 	.trusted-brand-images {
@@ -39,7 +49,7 @@
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-	.trusted-brand-container {
+	.trusted-brand {
 		gap: 1.5rem;
 	}
 	.trusted-brand-images {
@@ -48,7 +58,7 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-	.trusted-brand-container {
+	.trusted-brand {
 		gap: 1.5rem;
 	}
 	.trusted-brand-images {
