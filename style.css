@@ -130,24 +130,6 @@ button:hover {
 	justify-content: center;
 }
 
-.desktop-only {
-	display: block;
-}
-
-.mobile-only {
-	display: none;
-}
-
-/* Responsive styles */
-@media only screen and (max-width: 1080px) {
-	.desktop-only {
-		display: none;
-	}
-	.mobile-only {
-		display: block;
-	}
-}
-
 .flex {
 	display: flex;
 }
@@ -158,4 +140,23 @@ button:hover {
 
 .justify-center {
 	justify-content: center;
+}
+
+/* Default: Show desktop-only, hide mobile-only */
+.desktop-only {
+	display: block;
+}
+.mobile-only {
+	display: none;
+}
+
+/* Mobile-first approach */
+/* Show mobile-only, hide desktop-only on smaller screens */
+@media only screen and (max-width: 768px) {
+	.desktop-only {
+		display: none;
+	}
+	.mobile-only {
+		display: block;
+	}
 }
