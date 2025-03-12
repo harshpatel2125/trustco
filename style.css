@@ -21,7 +21,6 @@ body {
 	line-height: 1.6;
 	color: var(--text-color);
 	background-color: var(--background-color);
-	padding: 20px;
 }
 
 /* Heading styles */
@@ -32,7 +31,6 @@ h4,
 h5,
 h6 {
 	font-weight: bold;
-	color: var(--primary-color);
 	margin-bottom: 10px;
 	font-family: "Lato", sans-serif;
 	font-weight: 500;
@@ -61,7 +59,6 @@ h6 {
 /* Paragraph styles */
 p {
 	font-size: 1rem;
-	margin-bottom: 16px;
 	font-family: "Lato", sans-serif;
 	font-weight: 500;
 	font-style: normal;
@@ -80,25 +77,36 @@ a:hover {
 	text-decoration: underline;
 }
 
+.text-primary {
+	color: var(--primary-color);
+}
+
 /* Default button styles */
-button {
-	background-color: var(--primary-color);
-	color: #fff;
+.btn {
 	border: none;
-	padding: 10px 20px;
+	background-color: transparent;
 	font-size: 1rem;
 	cursor: pointer;
-	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
 	font-family: "Lato", sans-serif;
 	font-weight: 500;
 	font-style: normal;
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
 }
 
 .btn-outline {
 	border: 1px solid var(--primary-color);
 	color: var(--primary-color);
 	background-color: transparent;
-	padding: 10px 20px;
 	border-radius: 8px;
 }
 
@@ -114,7 +122,40 @@ button:hover {
 	filter: brightness(125%);
 }
 
-/* Default spacing for sections */
-section {
-	padding: 40px 0;
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 1.25rem !important;
+	display: flex;
+	justify-content: center;
+}
+
+.desktop-only {
+	display: block;
+}
+
+.mobile-only {
+	display: none;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1080px) {
+	.desktop-only {
+		display: none;
+	}
+	.mobile-only {
+		display: block;
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
 }

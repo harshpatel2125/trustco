@@ -1,0 +1,61 @@
+.hero-section {
+	width: 1120px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding: 11.25rem 0;
+}
+
+.hero-title {
+	font-size: 64px;
+	line-height: 1.2;
+}
+
+.hero-text {
+	font-size: 1.25rem;
+	color: var(--text-color);
+	padding: 0 1rem;
+}
+
+.hero-buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 2rem;
+	gap: 2rem;
+}
+
+.hero-get-start-btn {
+	border-radius: 55px;
+	font-weight: bold;
+	transition: 0.3s;
+	height: 3.75rem;
+	width: 8.813rem;
+	box-shadow: 0px 23px 47px 0px #043a533d;
+}
+
+.hero-video-btn {
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: 0.3s;
+	height: 3.75rem;
+}
+
+.hero-btn-play-icon {
+	height: 2.19rem;
+	width: 2.19rem;
+	background-color: var(--primary-color);
+	border-radius: 50%;
+}
+
+.hero-btn-play-icon img {
+	margin-left: 3px;
+}
+
+.hero-images {
+	height: 340px;
+	width: auto;
+	object-fit: cover;
+}

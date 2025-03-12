@@ -26,32 +26,64 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="fonts.css"
+			href="styles/margin-padding.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/fonts.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/hero-section.css"
 		/>
 	</head>
 	<body>
 		<!-- Header Section -->
-		<header>
-			<h1>Trustco.</h1>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+		<header></header>
 
 		<!-- Main Content Section -->
 		<main>
-			<h2>Welcome to Our Landing Page</h2>
-			<p>This is a placeholder for the main content.</p>
+			<div class="container">
+				<!-- Hero Section Start -->
+				<div class="hero-section">
+					<img
+						src="assets/images/HeroLeft.png"
+						alt="Hero Left"
+						class="hero-images desktop-only"
+					/>
+					<div class="hero-content">
+						<p class="lato-bolder text-center hero-title">
+							Find a High-Potential Customers with
+							<span class="text-primary lato-bolder">Trustco.</span>
+						</p>
+						<p class="text-center lato-medium hero-text">
+							We provide sales teams and professionals with the knowledge, skill, and
+							discipline they need to be 10x more successful.
+						</p>
+						<div class="flex justify-center hero-buttons">
+							<button class="btn btn-primary hero-get-start-btn">Get Started</button>
+							<button class="btn hero-video-btn flex items-center px-6">
+								<div class="flex items-center justify-center hero-btn-play-icon">
+									<img
+										src="assets/icons/play.svg"
+										alt="Play"
+									/>
+								</div>
+								<span class="ml-4">Check Our Video</span>
+							</button>
+						</div>
+					</div>
+					<img
+						src="assets/images/HeroRight.png"
+						alt="Hero Right"
+						class="hero-images desktop-only"
+					/>
+				</div>
+				<!-- Hero Section End -->
+			</div>
 		</main>
 
 		<!-- Footer Section -->
-		<footer>
-			<p>&copy; 2025 Company Name. All rights reserved.</p>
-		</footer>
+		<footer></footer>
 	</body>
 </html>
