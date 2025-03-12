@@ -1,0 +1,120 @@
+/* Global Styles */
+
+/* Set up box-sizing */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Define CSS variables for colors */
+:root {
+	--primary-color: #043a53;
+	--text-color: #12141d;
+	--background-color: #f2f5f6;
+}
+
+/* Apply global font styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--text-color);
+	background-color: var(--background-color);
+	padding: 20px;
+}
+
+/* Heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	color: var(--primary-color);
+	margin-bottom: 10px;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.75rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+h5 {
+	font-size: 1.25rem;
+}
+h6 {
+	font-size: 1rem;
+}
+
+/* Paragraph styles */
+p {
+	font-size: 1rem;
+	margin-bottom: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* Link styles */
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Default button styles */
+button {
+	background-color: var(--primary-color);
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 8px;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.btn-outline {
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+	background-color: transparent;
+	padding: 10px 20px;
+	border-radius: 8px;
+}
+
+.btn-inherit {
+	border: none;
+	color: var(--primary-color);
+	background-color: transparent;
+	padding: 10px 20px;
+	border-radius: 8px;
+}
+
+button:hover {
+	filter: brightness(125%);
+}
+
+/* Default spacing for sections */
+section {
+	padding: 40px 0;
+}
