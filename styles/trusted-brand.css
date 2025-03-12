@@ -1,0 +1,23 @@
+.trusted-brand-container {
+	padding: 3.13rem 0;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 4rem;
+}
+
+.trusted-brand-images {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 4rem;
+}
+
+.trusted-brand-text {
+	font-size: 1rem;
+	color: #000;
+}
