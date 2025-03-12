@@ -33,3 +33,36 @@
 .header-login-btn {
 	background-color: #fff;
 }
+
+.header-hamburger-btn {
+	display: none;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 425px) {
+	.header-container {
+		height: 72px;
+		background-color: #fff;
+	}
+	.header-menu,
+	.header-buttons {
+		display: none;
+	}
+	.header-hamburger-btn {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+	.header-container {
+		height: 72px;
+		background-color: #fff;
+	}
+	.header-menu,
+	.header-buttons {
+		display: none;
+	}
+	.header-hamburger-btn {
+		display: block;
+	}
+}
