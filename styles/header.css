@@ -1,0 +1,68 @@
+.header-container {
+	height: 98px;
+	padding: 0 1.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-menu {
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
+}
+
+.header-active-section {
+	font-weight: 800;
+	color: var(--primary-color);
+}
+
+.header-buttons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.header-buttons button {
+	height: 50px;
+	width: 92px;
+	border-radius: 42px;
+	font-weight: 800;
+}
+
+.header-login-btn {
+	background-color: #fff;
+}
+
+.header-hamburger-btn {
+	display: none;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 425px) {
+	.header-container {
+		height: 72px;
+		background-color: #fff;
+	}
+	.header-menu,
+	.header-buttons {
+		display: none;
+	}
+	.header-hamburger-btn {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+	.header-container {
+		height: 72px;
+		background-color: #fff;
+	}
+	.header-menu,
+	.header-buttons {
+		display: none;
+	}
+	.header-hamburger-btn {
+		display: block;
+	}
+}

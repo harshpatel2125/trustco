@@ -1,0 +1,157 @@
+.video-section-container {
+	width: 100%;
+	background-color: var(--primary-color);
+	display: flex;
+	justify-content: center;
+}
+
+.video-section {
+	max-width: 1440px;
+	padding: 100px 150px 0 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+}
+
+.video-section-title {
+	width: 60%;
+	font-size: 60px;
+	line-height: 72px;
+	letter-spacing: -2%;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.video-section-desc {
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.video-section-desc p {
+	font-size: 1.25rem;
+	color: #fff;
+}
+
+.video-image-section {
+	position: relative;
+}
+
+.video-image {
+	width: 100%;
+	margin-bottom: -7.5px;
+}
+
+.video-play-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.video-play-button img {
+	height: 25%;
+	width: 25%;
+	margin-left: 7px;
+	filter: invert(100%);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 425px) {
+	.video-section {
+		padding: 50px 20px 0 20px;
+		gap: 2rem;
+	}
+	.video-section-text {
+		flex-direction: column;
+	}
+	.video-section-title {
+		width: 100%;
+		font-size: 30px;
+		line-height: 40px;
+		color: #fff;
+		display: block;
+		text-align: center;
+	}
+	.video-section-desc {
+		margin-top: 1rem;
+		width: 100%;
+		justify-content: center;
+	}
+	.video-section-desc p {
+		font-size: 14px;
+	}
+	.video-play-button {
+		height: 36px;
+		width: 36px;
+	}
+	.video-play-button img {
+		margin-left: 3px;
+	}
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+	.video-section {
+		padding: 60px 40px 0 40px;
+		gap: 3rem;
+	}
+	.video-section-text {
+		flex-direction: column;
+	}
+	.video-section-title {
+		width: 100%;
+		font-size: 30px;
+		color: #fff;
+		display: block;
+		text-align: center;
+	}
+	.video-section-desc {
+		width: 100%;
+		justify-content: center;
+	}
+	.video-section-desc p {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.video-play-button {
+		height: 75px;
+		width: 75px;
+	}
+	.video-play-button img {
+		margin-left: 5px;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.video-section {
+		padding: 80px 80px 0;
+		gap: 3.5rem;
+	}
+	.video-section-title {
+		width: 50%;
+		font-size: 42px;
+		line-height: 68px;
+	}
+	.video-section-desc {
+		width: 50%;
+		padding-left: 3rem;
+	}
+	.video-section-desc p {
+		font-size: 1rem;
+	}
+	.video-play-button {
+		height: 100px;
+		width: 100px;
+	}
+	.video-play-button img {
+		margin-left: 5px;
+	}
+}
